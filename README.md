@@ -32,3 +32,11 @@ For companies that handle large amounts of sensitive data, weak passwords can po
  * Given that a user needs a new, secure password
  when prompted for password criteria
  then a password is generated
+
+## Build With
+* JavaScript
+* HTML
+* CSS
+
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details
