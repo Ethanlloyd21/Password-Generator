@@ -14,7 +14,7 @@ function create() {
 
     document.getElementById("display").value = password;
 
-    document.getElementById("lastNums").innerHTML += password + "<br />";
+    //document.getElementById("lastNums").innerHTML += password + "<br />";
 }
 
 document.getElementById("length").innerHTML = "Length = 60";
