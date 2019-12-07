@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="index.css">
-    <script src="function.js"></script>
+    
 
 </head>
 <body>
@@ -29,15 +29,17 @@
                     <h3>Password Generator</h3>
                     <br>
                     <input type="text" id="display">
-                    <br><br>
+                    <br><br><br />
                     <input type="range" min="8" max="128" id="slider">
-                    <br><br>
-                    <button onclick="">Generate Password</button>
-                    <br><br>
+                    <br><br><br />
+                    <button onclick="create()">Generate Password</button>
                     <button onclick="">Copy to Clipboard</button>
+                    <div id="length"></div>
+                    <br /><BR><br><br>
                 </div>
             </div>
         </div>
     </div>
+    <script src="function.js"></script>
 </body>
 </html>

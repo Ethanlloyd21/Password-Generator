@@ -13,3 +13,12 @@
 #slider {
     width: 100%;
 }
+
+#length {
+    display: inline-block;
+    width: 100px;
+}
+
+.previous_passwords {
+    margin-bottom: 20px;
+}
