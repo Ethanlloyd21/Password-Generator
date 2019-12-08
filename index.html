@@ -8,52 +8,53 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <!-- CSS -->
     <link rel="stylesheet" href="index.css">
     
 
 </head>
 <body>
 
-        <nav class="navbar fixed-top navbar-dark bg-primary">
-                <a class="navbar-brand" href="#">PASSWORD GENERATOR</a>
-        </nav>
+    <nav class="navbar fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">PASSWORD GENERATOR</a>
+    </nav>
     
     <div class="container">
-
+        
         <div class="row">
 
             <div class="col-lg-8 col-sm-12 mx-auto">
 
                 <div class="content">
-                    <h3>Password Generator</h3>
-                    <br>
+                    <h3>Generate Password</h3>
                     <input type="text" id="display">
-                    <br /><br>
                     <!-- <input type="range" min="8" max="128" id="slider"> -->
-                    <div class="checkbox">
-                        <label><input type="checkbox" value=""> Special Characters</label>
-                      </div>
-                      <div class="checkbox">
-                        <label><input type="checkbox" value=""> Numeric Characters</label>
-                      </div>
-                      <div class="checkbox">
-                        <label><input type="checkbox" value=""> Lowercase Characters</label>
-                      </div>
-                      <div class="checkbox">
-                        <label><input type="checkbox" value=""> Uppercase Characters</label>
-                      </div>
-                    <br />
+                    <div class="main-checkbox">
+                        <div class="form-check form-check-inline">
+                            <label><input type="checkbox" value='0' id="opt1"> Special</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <label><input type="checkbox" value='0' id="opt2"> Numeric</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <label><input type="checkbox" value='0' id="opt3"> Lowercase Letters</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <label><input type="checkbox" value='0' id="opt4"> Uppercase Letters</label>
+                        </div>
+                    </div>
                     <input type="range" min="8" max="128" id="slider">
-                    <br />
-                    <button onclick="create()">Generate Password</button>
-                    <button onclick="">Copy to Clipboard</button>
-                    <div id="length"></div>
-                    <br />
+                    <div class="center">
+                        <button type="button" class="btn btn-dark" onclick="create()" id="generate">Generate Password</button>
+                        <div id="length"></div>
+                        <button type="button" class="btn btn-dark" onclick="clipCopy()" id="copy">Copy to Clipboard</button>
+                       
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- JavaScript-->
     <script src="function.js"></script>
 </body>
 </html>
