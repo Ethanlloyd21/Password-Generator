@@ -18,15 +18,9 @@ This application generates a random password based on user-selected criteria. Th
  
 2. The user will then choose the length of the password by navigating to the scroll bar (8 min. - 128 max. characters).
 
-3. Once the Generate Password button is clicked, a generated password will show up on the text box.
+3. Once the Generate Password button is clicked, a generated password will show up on the text box. This application should validate user input and ensure that at least one character type is selected.
 
 4. Press "Copy to Clipboard" button to copy it.
-
-
-This application should validate user input and ensure that at least one character type is selected.
-Once all prompts are answered, the user will be presented with a password matching the answered prompts. 
-Displaying the generated password in an alert is acceptable, but attempt to write the password to the page instead.
-The user should also have the option to click a button to copy the password to their clipboard.
 
 
 ## User Story
