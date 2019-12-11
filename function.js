@@ -39,20 +39,6 @@ function create() {
     var option4 = document.getElementById('opt4').checked;
 
     var option = [option1, option2, option3, option4];
-
-    /*
-     //if no check box is checked then throws an error and alert the user.
-     if (option1 !== true && option2 !== true && option3 !== true && option4 !== true ) {
-        alert('Invalid Entry: Please select at least one check box for a character type');
-    }
-
-    j = 0;
-    while (j < option.length) {
-        if (option[j] == true) {
-            availableChar += characters[j];
-        }
-    }
-    */
   
     //if the checkbox on Special is checked then add var Special on the availableChar
     if (option1 === true) {
