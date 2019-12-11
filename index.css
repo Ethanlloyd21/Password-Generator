@@ -28,3 +28,7 @@
 #generate, #copy, h3, #display, .main-checkbox {
     padding: 20px;
 }
+
+#auth-image {
+    border-radius: 50%;
+}
