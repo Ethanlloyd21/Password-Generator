@@ -25,8 +25,6 @@ function create() {
     var Lower = "abcdefghijklmnopqrstuvwxyz";
     var Upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    var characters = [Special, Numerical, Lower, Upper];
-
     //setting the availableChar to empty string
     var availableChar = "";
     //setting the password to empty string
