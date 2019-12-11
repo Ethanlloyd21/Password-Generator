@@ -19,7 +19,7 @@ Once all prompts are answered, the user will be presented with a password matchi
 Displaying the generated password in an alert is acceptable, but attempt to write the password to the page instead.
 The user should also have the option to click a button to copy the password to their clipboard.
 
-NAVBAR includes a link of the code from Github.
+NAVBAR includes an image photo of the creator, a refresh button and link of the code from Github.
 
 ## User Story
 As an employee with access to sensitive data
