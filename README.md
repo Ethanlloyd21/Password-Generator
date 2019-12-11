@@ -19,9 +19,7 @@ Once all prompts are answered, the user will be presented with a password matchi
 Displaying the generated password in an alert is acceptable, but attempt to write the password to the page instead.
 The user should also have the option to click a button to copy the password to their clipboard.
 
-Your application should have a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
-Your application should be deployed to GitHub Pages.
-Your application's GitHub repository should contain a README.md file explaining the purpose and functionality of the application. The README.md file should include a screenshot of the completed application as well as a link to the deployed GitHub Pages URL.
+NAVBAR includes a link of the code from Github.
 
 ## User Story
 As an employee with access to sensitive data
