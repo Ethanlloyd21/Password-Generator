@@ -35,8 +35,6 @@ function create() {
     var option2 = document.getElementById('opt2').checked;
     var option3 = document.getElementById('opt3').checked;
     var option4 = document.getElementById('opt4').checked;
-
-    var option = [option1, option2, option3, option4];
   
     //if the checkbox on Special is checked then add var Special on the availableChar
     if (option1 === true) {
