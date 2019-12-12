@@ -1,4 +1,3 @@
-
 .content{
     margin-top: 60px;
     background-color: #21618C;
@@ -19,14 +18,13 @@
 #length {
     display: inline-block;
     width: 100px;
+    margin-left: 30%;
+    margin-right: 70%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.center {
-    display: flex;
-    justify-content: space-between;
-}
-
-h3, #display, .main-checkbox {
+h3, #display, .main-checkbox, #generate, #copy {
     padding: 20px;
 }
 
@@ -35,11 +33,5 @@ h3, #display, .main-checkbox {
 }
 
 
-@media screen and (min-width: 400px) {
-    #generate, #copy, #length {
-        
-        display: flex;
-        justify-content: center;
-        font-size: small;
-    }
-}
+
+

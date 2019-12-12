@@ -1,3 +1,4 @@
+
 <!-- Coded by: Lloyd Marceino
      Unit 03 JavaScript Homework: Password Generator -->
 
@@ -10,7 +11,7 @@
     <title>Password Generator</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> <!-- integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
     <!-- CSS -->
     <link rel="stylesheet" href="index.css">
     
@@ -68,11 +69,17 @@
                         </div>
                     </div>
                     <input type="range" min="8" max="128" id="slider">
-                    <div class="center">
-                        <button type="button" class="btn btn-dark" onclick="create()" id="generate">Generate Password</button>
-                        <div id="length"></div>
-                        <button type="button" class="btn btn-dark" onclick="clipCopy()" id="copy">Copy to Clipboard</button>
-                            
+                    <!-- <div class="center"> -->
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4">
+                            <button type="button" class="btn-block btn btn-dark" onclick="create()" id="generate">Generate</button>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4">
+                            <div id="length"></div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4">
+                            <button type="button" class="btn-block btn btn-dark" onclick="clipCopy()" id="copy">Copy</button>
+                        </div>   
                     </div>
                     
                 </div>
@@ -90,4 +97,3 @@
     <!-- Bootstrap JavaScript CDN -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
-</html>
