@@ -17,11 +17,12 @@
 
 </head>
 <body>
-    <!-- Nav bar on top as a header-->
+    <!--Nav bar on top as a header -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="pic.png" id="auth-image" alt="">  PASSWORD GENERATOR</a>
+                <img src="pic.png" id="auth-image" alt="">  PASSWORD GENERATOR
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,8 +38,8 @@
                     </ul>
             </div>
         </div>
-    </nav>
-          
+    </nav> 
+
 
     
     <!-- Main Body container-->
@@ -71,13 +72,22 @@
                         <button type="button" class="btn btn-dark" onclick="create()" id="generate">Generate Password</button>
                         <div id="length"></div>
                         <button type="button" class="btn btn-dark" onclick="clipCopy()" id="copy">Copy to Clipboard</button>
-                       
+                            
                     </div>
+                    
                 </div>
             </div>
         </div>
     </div>
     <!-- JavaScript-->
     <script src="function.js"></script>
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+ 
+    <!-- Bootstrap JavaScript CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
