@@ -5,8 +5,8 @@
 ## Description
 This application generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by a JavaScript code.
 
- * NAVBAR includes an image photo of the creator, a refresh button and link of the code from Github.
- * The page is responsive destops, tablets and phones.
+ * The NAVBAR includes an image photo of the creator, a refresh button and link of the code from Github.
+ * The page is responsive destops, tablets and phones. 
 
 ![](sample.PNG)
 
