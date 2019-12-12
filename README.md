@@ -1,6 +1,6 @@
 # Password-Generator
 
-## Unit 03 JavaScript: Password Generator
+## JavaScript: Password Generator
 
 ## Description
 This application generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by a JavaScript code.
