@@ -12,11 +12,12 @@ The user will be prompted to choose from the following password criteria:
  * Special characters 
  * Numeric characters
  * Lowercase letters
- * Uppercase ;etters
+ * Uppercase letters
  * Length (must be between 8 and 128 characters)
 
-This application validates user input and ensure that at least one character type is selected.
-Once all prompts are answered, the user will be presented with a password matching the answered prompts. 
+This application validates user input and ensure that at least one character type is selected. If no selection was made 
+from the criteria, the program throws an error and asks the user to prompt at least one criteria.
+Once prompts are answered, the user will be presented with a password matching the answered prompts. 
 The user also have the option to click a button to copy the password to the clipboard.
 
  * NAVBAR includes an image photo of the creator, a refresh button and link of the code from Github.
