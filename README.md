@@ -5,7 +5,12 @@
 ## Description
 This application generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by a JavaScript code.
 
+ * NAVBAR includes an image photo of the creator, a refresh button and link of the code from Github.
+ * The page is responsive
+
 ![](sample.PNG)
+
+## How does it work?
 
 The user will be prompted to choose from the following password criteria:
  
@@ -19,9 +24,6 @@ This application validates user input and ensure that at least one character typ
 from the criteria, the program throws an error and asks the user to prompt at least one criteria.
 Once prompts are answered, the user will be presented with a password matching the answered prompts. 
 The user also have the option to click a button to copy the password to the clipboard.
-
- * NAVBAR includes an image photo of the creator, a refresh button and link of the code from Github.
- * The page is responsive
 
 ## Business Context
 For companies that handle large amounts of sensitive data, weak passwords can pose a real security threat. An application that can generate strong passwords quickly and effortlessly saves employees time and ensures secure access to data.
