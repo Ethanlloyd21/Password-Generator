@@ -8,11 +8,12 @@ This application generates a random password based on user-selected criteria. Th
 ![](sample.PNG)
 
 The user will be prompted to choose from the following password criteria:
- * Length (must be between 8 and 128 characters)
- * Special characters (see examples)
+ 
+ * Special characters 
  * Numeric characters
- * Lowercase characters
- * Uppercase characters
+ * Lowercase letters
+ * Uppercase ;etters
+ * Length (must be between 8 and 128 characters)
 
 This application validates user input and ensure that at least one character type is selected.
 Once all prompts are answered, the user will be presented with a password matching the answered prompts. 
