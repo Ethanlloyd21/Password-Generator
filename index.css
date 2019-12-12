@@ -32,3 +32,11 @@ h3, #display, .main-checkbox {
 #auth-image {
     border-radius: 50%;
 }
+
+@media screen and (min-width: 400px) {
+    #generate, #copy, #length {
+        
+        display: flex;
+        justify-content: center;
+    }
+}
