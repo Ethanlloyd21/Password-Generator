@@ -1,3 +1,4 @@
+
 .content{
     margin-top: 60px;
     background-color: #21618C;
@@ -33,10 +34,12 @@ h3, #display, .main-checkbox {
     border-radius: 50%;
 }
 
+
 @media screen and (min-width: 400px) {
     #generate, #copy, #length {
         
         display: flex;
         justify-content: center;
+        font-size: small;
     }
 }
