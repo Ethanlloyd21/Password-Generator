@@ -20,6 +20,7 @@ Displaying the generated password in an alert is acceptable, but attempt to writ
 The user should also have the option to click a button to copy the password to their clipboard.
 
  * NAVBAR includes an image photo of the creator, a refresh button and link of the code from Github.
+ * The page is responsive
 
 ## User Story
 As an employee with access to sensitive data
