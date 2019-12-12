@@ -35,7 +35,7 @@ function create() {
     var option2 = document.getElementById('opt2').checked;
     var option3 = document.getElementById('opt3').checked;
     var option4 = document.getElementById('opt4').checked;
-
+  
     //if the checkbox on Special is checked then add var Special on the availableChar
     if (option1 === true) {
         availableChar += Special;
@@ -49,14 +49,14 @@ function create() {
         availableChar += Lower;
     }
     //if the checkbox on Uppercase Letters is checked then add var Upper on the availableChar
-    if(option4 === true) {
+    if (option4 === true) {
         availableChar += Upper;
     }
     //if no check box is checked then throws an error and alert the user.
     if (option1 !== true && option2 !== true && option3 !== true && option4 !== true ) {
         alert('Invalid Entry: Please select at least one check box for a character type');
     }
-    
+   
 
     //generating a passowrd based on the checked box input of the user.
     for (var i = 0; i <= howManyChar; i++) {
