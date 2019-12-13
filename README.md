@@ -7,7 +7,7 @@ This application generates a random password based on user-selected criteria. Th
 
 ![](sample.PNG)
 
- * The NAVBAR includes an image photo of the creator, a refresh button and link of the code from Github.
+ * The NAVBAR includes an image photo of the creator, a refresh button and link to Github to see the code.
  * The page is responsive to destops, tablets and phones. 
 
 ![](responsive.PNG)
