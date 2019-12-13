@@ -1,4 +1,3 @@
-
 //Length = 60 as the middle of the slider. 
 document.getElementById("length").innerHTML = "Length = 60";
 
@@ -79,4 +78,3 @@ function clipCopy() {
 
     alert("Your password is now copied on the clipboard!");
 }
- 
