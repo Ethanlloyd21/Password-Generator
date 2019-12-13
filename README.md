@@ -14,7 +14,7 @@ This application generates a random password based on user-selected criteria. Th
 
 ## How does it work?
 
-The user will be prompted to choose from the following password criteria:
+User can select multiple criteria from the checkbox:
  
  * Special characters 
  * Numeric characters
@@ -23,8 +23,8 @@ The user will be prompted to choose from the following password criteria:
  * Length (must be between 8 and 128 characters)
 
 This application validates user input and ensure that at least one character type is selected. If no selection was made 
-from the criteria, the program throws an error and asks the user to prompt at least one criteria.
-Once prompts are answered, the user will be presented with a password matching the answered prompts. 
+from the criteria, the program throws an error and asks the user to select at least one criteria.
+Once a criteria is selected, the user will be presented with a password matching the criteria. 
 The user also have the option to click a button to copy the password to the clipboard.
 
 ## Business Context
@@ -39,6 +39,9 @@ For companies that handle large amounts of sensitive data, weak passwords can po
 * JavaScript
 * HTML
 * CSS
+
+## Links
+
 
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details
