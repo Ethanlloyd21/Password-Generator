@@ -42,6 +42,17 @@ For companies that handle large amounts of sensitive data, weak passwords can po
 
 ## Links
 
+https://maxcdn.bootstrapcdn.com
+
+https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js
+
+https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js
+
+https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js
+
+## .gitattribute
+
+* a simple text file that gives attributes to pathnames (from HTML to JavaScript)
 
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details
