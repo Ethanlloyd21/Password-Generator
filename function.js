@@ -29,10 +29,7 @@ function create() {
     //setting the password to empty string
     var password = "";
 
-    //character checker variables
-    var spec, num, low, up = false;
-
-    
+    // creating variables on an entity that the user picked
     var option1 = document.getElementById('opt1').checked;
     var option2 = document.getElementById('opt2').checked;
     var option3 = document.getElementById('opt3').checked;
@@ -41,30 +38,24 @@ function create() {
     //if the checkbox on Special is checked then add var Special on the availableChar
     if (option1 === true) {
         availableChar += Special;
-        spec = true;
     }
     //if the checkbox on Numerical is checked then add var Numerical on the availableChar
     if (option2 === true) {
         availableChar += Numerical;
-        num = true;
     }
     //if the checkbox on Lowercase Letters is checked then add var Lower on the availableChar
     if (option3 === true) {
         availableChar += Lower;
-        low = true;
     }
     //if the checkbox on Uppercase Letters is checked then add var Upper on the availableChar
     if (option4 === true) {
-        availableChar += Upper;
-        up = true;
+        availableChar += Upper; 
     }
     //if no check box is checked then throws an error and alert the user.
     if (option1 !== true && option2 !== true && option3 !== true && option4 !== true ) {
         alert('Invalid Entry: Please select at least one check box for a character type');
     }
    
-   
-
     //generating a passowrd based on the checked box input of the user.
     for (var i = 0; i < howManyChar; i++) {
 
@@ -72,43 +63,14 @@ function create() {
 
     }
     
-    /*
-    //checker variable
-    var checkerChar;
-    var newPassword;
-
-    //checks to make sure that all the box checked by the user are included to the password
-    //check for special characters if user picked it
-    if (spec === true && !Special.includes(password)) {
-        checkerChar = Special.charAt(Math.floor(Math.random() * Math.floor(Special.length - 1)));
-        newPassword = password.replace(password.charAt(0), checkerChar);
-        password = newPassword;
-        
-    }
-    //check for numerical characters if user picked it
-    if (num === true && !Numerical.includes(password)) {
-        checkerChar = Numerical.charAt(Math.floor(Math.random() * Math.floor(Numerical.length - 1)));
-        newPassword = password.replace(password.charAt(1), checkerChar);
-        password = newPassword;
-    }
-    //check for lower case characters if user picked it
-    if (low === true && !Lower.includes(password)) {
-        checkerChar = Lower.charAt(Math.floor(Math.random() * Math.floor(Lower.length - 1)));
-        newPassword = password.replace(password.charAt(2), checkerChar);
-        password = newPassword;
-    }
-    //check for upper case characters if user picked it
-    if (up === true && !Upper.includes(password)) {
-        checkerChar = Upper.charAt(Math.floor(Math.random() * Math.floor(Upper.length - 1)));
-        newPassword = password.replace(password.charAt(3), checkerChar);
-        password = newPassword;
-    }
-    */
-    
+    //checks if the generated password contains all the entity the user wanted
+    //if the password contains all the entity then print it
     if (availableChar.includes(password)) {
         //displaying the password 
         document.getElementById("display").value = password;
     }
+    //if the password does not contain all the entity then dump the password and generate another password
+    //until all entity is met
     else {
         
         while (!availableChar.includes(password)) {
@@ -121,10 +83,6 @@ function create() {
          //displaying the password 
         document.getElementById("display").value = password;
     }
-        
-    
-    //displaying the password 
-    //document.getElementById("display").value = password;
 } 
 
 
