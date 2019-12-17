@@ -69,10 +69,7 @@ function create() {
     //if the password contains all the entity then print it
     //if the password does not contain all the entity then dump the password and generate another password
     //until all entity is met
-    if (availableChar.includes(password)) {
-        //displaying the password 
-        document.getElementById("display").value = password;
-    } else {
+    if (!availableChar.includes(password))  {
         
         while (!availableChar.includes(password)) {
             password = "";
@@ -81,9 +78,9 @@ function create() {
                 password = password + availableChar.charAt(Math.floor(Math.random() * Math.floor(availableChar.length - 1)));
             }
         }
-         //displaying the password 
-        document.getElementById("display").value = password;
     }
+     //displaying the password 
+     document.getElementById("display").value = password;
 
 } 
 
