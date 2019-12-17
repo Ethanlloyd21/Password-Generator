@@ -105,19 +105,26 @@ function create() {
     }
     */
     
-    while (!availableChar.includes(password)) {
-        password = "";
+    if (availableChar.includes(password)) {
+        //displaying the password 
+        document.getElementById("display").value = password;
+    }
+    else {
         
-         for (var i = 0; i < howManyChar; i++) {
-
+        while (!availableChar.includes(password)) {
+            password = "";
+        
+            for (var i = 0; i < howManyChar; i++) {
                 password = password + availableChar.charAt(Math.floor(Math.random() * Math.floor(availableChar.length - 1)));
-         }
-
+            }
+        }
+         //displaying the password 
+        document.getElementById("display").value = password;
     }
         
     
     //displaying the password 
-    document.getElementById("display").value = password;
+    //document.getElementById("display").value = password;
 } 
 
 
