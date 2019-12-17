@@ -72,6 +72,7 @@ function create() {
 
     }
     
+    /*
     //checker variable
     var checkerChar;
     var newPassword;
@@ -102,6 +103,18 @@ function create() {
         newPassword = password.replace(password.charAt(3), checkerChar);
         password = newPassword;
     }
+    */
+    
+    while (!availableChar.includes(password)) {
+        password = "";
+        
+         for (var i = 0; i < howManyChar; i++) {
+
+                password = password + availableChar.charAt(Math.floor(Math.random() * Math.floor(availableChar.length - 1)));
+         }
+
+    }
+        
     
     //displaying the password 
     document.getElementById("display").value = password;
