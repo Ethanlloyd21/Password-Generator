@@ -19,7 +19,7 @@ function create() {
     //getting how many characters of the password via the slider
     var howManyChar = document.getElementById("slider").value;
 
-    var Special = "!@#$%^&*()_+";
+    var Special = "!@#$%^&*()_+{[}]|\,./<>?";
     var Numerical = "1234567890";
     var Lower = "abcdefghijklmnopqrstuvwxyz";
     var Upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
