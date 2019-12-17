@@ -81,24 +81,27 @@ function create() {
     if (spec === true && !Special.includes(password)) {
         checkerChar = Special.charAt(Math.floor(Math.random() * Math.floor(Special.length - 1)));
         newPassword = password.replace(password.charAt(0), checkerChar);
+        password = newPassword;
+        
     }
     //check for numerical characters if user picked it
     if (num === true && !Numerical.includes(password)) {
         checkerChar = Numerical.charAt(Math.floor(Math.random() * Math.floor(Numerical.length - 1)));
         newPassword = password.replace(password.charAt(1), checkerChar);
+        password = newPassword;
     }
     //check for lower case characters if user picked it
     if (low === true && !Lower.includes(password)) {
         checkerChar = Lower.charAt(Math.floor(Math.random() * Math.floor(Lower.length - 1)));
         newPassword = password.replace(password.charAt(2), checkerChar);
+        password = newPassword;
     }
     //check for upper case characters if user picked it
     if (up === true && !Upper.includes(password)) {
         checkerChar = Upper.charAt(Math.floor(Math.random() * Math.floor(Upper.length - 1)));
         newPassword = password.replace(password.charAt(3), checkerChar);
+        password = newPassword;
     }
-
-    password = newPassword;
     
     //displaying the password 
     document.getElementById("display").value = password;
