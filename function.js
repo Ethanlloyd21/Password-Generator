@@ -64,7 +64,7 @@ function create() {
 
     }
     
-
+    /*
     //checks if the generated password contains all the entity the user wanted
     //if the password contains all the entity then print it
     //if the password does not contain all the entity then dump the password and generate another password
@@ -79,6 +79,7 @@ function create() {
             }
         }
     }
+    */
      //displaying the password 
      document.getElementById("display").value = password;
 
