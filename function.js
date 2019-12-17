@@ -64,7 +64,7 @@ function create() {
 
     }
     
-    /*
+
     //checks if the generated password contains all the entity the user wanted
     //if the password contains all the entity then print it
     if (availableChar.includes(password)) {
@@ -85,10 +85,7 @@ function create() {
          //displaying the password 
         document.getElementById("display").value = password;
     }
-    */
-     //displaying the password 
-    document.getElementById("display").value = password;
-    
+
 } 
 
 
