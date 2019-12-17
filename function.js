@@ -19,7 +19,7 @@ function create() {
     //getting how many characters of the password via the slider
     var howManyChar = document.getElementById("slider").value;
 
-    var Special = "!@#$%^&*()_+{[}]|\,./<>?";
+    var Special = "!@#$%^&*()?=+";
     var Numerical = "1234567890";
     var Lower = "abcdefghijklmnopqrstuvwxyz";
     var Upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -37,6 +37,11 @@ function create() {
     var option2 = document.getElementById('opt2').checked;
     var option3 = document.getElementById('opt3').checked;
     var option4 = document.getElementById('opt4').checked;
+
+    //if no check box is checked then throws an error and alert the user.
+    if (option1 !== true && option2 !== true && option3 !== true && option4 !== true ) {
+        alert('Invalid Entry: Please select at least one check box for a character type');
+    }
   
     //if the checkbox on Special is checked then add var Special on the availableChar
     if (option1 === true) {
@@ -58,10 +63,7 @@ function create() {
         availableChar += Upper;
         up = true;
     }
-    //if no check box is checked then throws an error and alert the user.
-    if (option1 !== true && option2 !== true && option3 !== true && option4 !== true ) {
-        alert('Invalid Entry: Please select at least one check box for a character type');
-    }
+   
    
    
 
@@ -71,7 +73,10 @@ function create() {
         password = password + availableChar.charAt(Math.floor(Math.random() * Math.floor(availableChar.length - 1)));
 
     }
+
+
     
+    /*
     //checker variable
     var checkerChar;
     var newPassword;
@@ -99,6 +104,8 @@ function create() {
     }
 
     password = newPassword;
+
+    */
     
     //displaying the password 
     document.getElementById("display").value = password;
