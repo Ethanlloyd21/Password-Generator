@@ -1,14 +1,14 @@
 //Length = 60 as the middle of the slider. 
-document.getElementById("length").innerHTML = "Length = 60";
+document.getElementById("length").textContent = "Length = 60";
 
 //setting up the value of the slider as the user toggle 
 document.getElementById("slider").oninput = function() {
 
     if (document.getElementById("slider").value > 0) {
-        document.getElementById("length").innerHTML = "Length: " + document.getElementById("slider").value;
+        document.getElementById("length").textContent = "Length: " + document.getElementById("slider").value;
     }
     else {
-        document.getElementById("length").innerHTML = "Length: 8";
+        document.getElementById("length").textContent = "Length: 8";
     }
 }
 
