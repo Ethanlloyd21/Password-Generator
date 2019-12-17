@@ -67,13 +67,12 @@ function create() {
 
     //checks if the generated password contains all the entity the user wanted
     //if the password contains all the entity then print it
+    //if the password does not contain all the entity then dump the password and generate another password
+    //until all entity is met
     if (availableChar.includes(password)) {
         //displaying the password 
         document.getElementById("display").value = password;
-    }
-    //if the password does not contain all the entity then dump the password and generate another password
-    //until all entity is met
-    else {
+    } else {
         
         while (!availableChar.includes(password)) {
             password = "";
